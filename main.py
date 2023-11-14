@@ -10,8 +10,17 @@ import naive_bayes_classification as naive
 import decision_tree_classification as dtc
 import random_forest_classification as rfc
 colorama.init(autoreset=True)
-classifier = rfc.classifier
+model_list = [lr.classifier, knn.classifier, l_svm.classifier, rbf_svm.classifier, naive.classifier,
+              dtc.classifier, rfc.classifier]
+name_list = ["Logistic Regression", "KNN Classification", "Linear Kernel SVM Classification",
+             "RBF Kernel SVM Classification", "Gaussian Naive Bayes Classification",
+             "Decision Tree Classification", "Random Forest Classification"]
+file = open('model_settings.txt', 'r')
+model_name = int(file.read(1))
+classifier = model_list[model_name-1]
 print("------------------Breast Cancer Prediction------------------")
+print(f"***Current Model:{name_list[model_name-1]}***")
+file.close()
 while True:
     print("1-Make a prediction\n"
           "2-Retrieve patient data\n"
@@ -19,7 +28,11 @@ while True:
           "4-Exit")
     option = input('Please select an action:')
     if option == '1':
-        sample_number = int(input("Enter Sample Number:"))
+        try:
+            sample_number = int(input("Enter Sample Number:"))
+        except:
+            print(Fore.RED + 'Not a valid sample number!')
+            sample_number = int(input("Enter Sample Number(Carefully!):"))
         print("Enter the following perimeters to make the prediction")
         x_0 = int(input('Clump thickness:'))
         x_1 = int(input('Uniformity of Cell Size:'))
@@ -63,7 +76,9 @@ while True:
             if len(r) != 0:
                 record += f.read(len(r))
             if data == '':
+                print('************************************************************************')
                 print(colorama.Fore.RED + 'Invalid Patient Number!')
+                print('************************************************************************')
                 break
             if record[-11] == 'B':
                 if data == num:
@@ -94,17 +109,16 @@ while True:
         print(f'5.Gaussian Naive Bayes Classification\'s Accuracy Score-> {naive.naive_accu}')
         print(f'6.Decision Tree Classification\'s Accuracy Score-> {dtc.tree_accu}')
         print(f'7.Random Forest Classification\'s Accuracy Score-> {rfc.forest_accu}')
-        model = int(input("Select the model number:"))
-        model_list = [lr.classifier, knn.classifier, l_svm.classifier, rbf_svm.classifier, naive.classifier,
-                      dtc.classifier, rfc.classifier]
-        name_list = ["Logistic Regression", "KNN Classification", "Linear Kernel SVM Classification",
-                     "RBF Kernel SVM Classification", "Gaussian Naive Bayes Classification",
-                     "Decision Tree Classification", "Random Forest Classification"]
-        classifier = model_list[model-1]
+        model_num = input("Select the model number:")
+        f = open('model_settings.txt', 'w')
+        f.write(model_num)
+        f.close()
+        classifier = model_list[int(model_num)-1]
         print("************************************************************************")
-        print(Fore.GREEN + f"Successfully changed the prediction model to {name_list[model-1]}")
+        print(Fore.GREEN + f"Successfully changed the prediction model to {name_list[int(model_num)-1]}")
         print("************************************************************************")
     elif option == '4':
+        print('Thanks for using this software!')
         exit()
     else:
         print('Invalid Option!')
