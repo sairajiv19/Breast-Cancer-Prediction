@@ -1,6 +1,7 @@
-# Classification
-This Repository compares different classification models on the same dataset.\
-The dataset is a classic breast cancer detection based dataset.\
-Please install scikit-learn, pandas and numpy to run the files.\
-Also run the main file to see all the accuracy scores of different models.\
-Thank You.
+# Breast Cancer Prediction
+This repository is for a breast cancer prediction software.\
+It can predict if a cell is malignant or benign based on different parameters.\
+It consists of various Machine Learning models which have been trained.\
+These trained models are used to make a prediction.\
+Thank You.\
+**Note**: Install scikit-learn, pandas and colorama to use the application.
