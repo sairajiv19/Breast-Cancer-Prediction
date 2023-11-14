@@ -1,0 +1,96 @@
+Patient Number: 103892
+Clump thickness: 5
+Uniformity of Cell Size: 1
+Uniformity of Cell Shape: 1
+Marginal Adhesion: 1
+Single Epithelial Cell Size: 3
+Bare Nuclei: 1
+Bland Chromatin: 1
+Normal Nucleoli: 2
+Mitoses: 1
+Result: Benign Cell
+------------------------------------------------------------
+Patient Number: 103896
+Clump thickness: 1
+Uniformity of Cell Size: 2
+Uniformity of Cell Shape: 3
+Marginal Adhesion: 4
+Single Epithelial Cell Size: 1
+Bare Nuclei: 2
+Bland Chromatin: 3
+Normal Nucleoli: 4
+Mitoses: 2
+Result: Benign Cell
+------------------------------------------------------------
+Patient Number: 103898
+Clump thickness: 1
+Uniformity of Cell Size: 2
+Uniformity of Cell Shape: 6
+Marginal Adhesion: 2
+Single Epithelial Cell Size: 9
+Bare Nuclei: 3
+Bland Chromatin: 8
+Normal Nucleoli: 9
+Mitoses: 3
+Result: Malignant Cell
+------------------------------------------------------------
+Patient Number: 103900
+Clump thickness: 1
+Uniformity of Cell Size: 1
+Uniformity of Cell Shape: 1
+Marginal Adhesion: 2
+Single Epithelial Cell Size: 5
+Bare Nuclei: 2
+Bland Chromatin: 7
+Normal Nucleoli: 2
+Mitoses: 1
+Result: Benign Cell
+------------------------------------------------------------
+Patient Number: 103992
+Clump thickness: 8
+Uniformity of Cell Size: 10
+Uniformity of Cell Shape: 10
+Marginal Adhesion: 7
+Single Epithelial Cell Size: 10
+Bare Nuclei: 10
+Bland Chromatin: 9
+Normal Nucleoli: 2
+Mitoses: 1
+Result: Malignant Cell
+------------------------------------------------------------
+Patient Number: 103994
+Clump thickness: 1
+Uniformity of Cell Size: 3
+Uniformity of Cell Shape: 5
+Marginal Adhesion: 3
+Single Epithelial Cell Size: 7
+Bare Nuclei: 1
+Bland Chromatin: 2
+Normal Nucleoli: 6
+Mitoses: 5
+Result: Malignant Cell
+------------------------------------------------------------
+Patient Number: 104111
+Clump thickness: 8
+Uniformity of Cell Size: 3
+Uniformity of Cell Shape: 2
+Marginal Adhesion: 1
+Single Epithelial Cell Size: 5
+Bare Nuclei: 2
+Bland Chromatin: 1
+Normal Nucleoli: 3
+Mitoses: 2
+Result: Benign Cell
+------------------------------------------------------------
+Patient Number: 104110
+Clump thickness: 1
+Uniformity of Cell Size: 2
+Uniformity of Cell Shape: 10
+Marginal Adhesion: 4
+Single Epithelial Cell Size: 10
+Bare Nuclei: 10
+Bland Chromatin: 2
+Normal Nucleoli: 9
+Mitoses: 10
+Result: Malignant Cell
+------------------------------------------------------------
